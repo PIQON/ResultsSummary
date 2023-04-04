@@ -15,7 +15,7 @@
 
 ## Lighthouse Statistics
 
-![My Image](images/lighthouse.png)
+![My Image](assets/images/lighthouse.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -40,7 +40,7 @@
 
 ## About The Project
 
-Scan the QR code and see where it will take you.
+See your test summary, individual stats are described.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
