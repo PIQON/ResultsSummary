@@ -1,16 +1,18 @@
 :root {
-  --color-primary-400: hsl(0, 100%, 67%);
-  --color-primary-300: hsl(39, 100%, 56%);
-  --color-primary-200: hsl(166, 100%, 37%);
-  --color-primary-100: hsl(234, 85%, 45%);
+  --color-primary-400: 255, 87, 87;
+  --color-primary-300: 255, 176, 31;
+  --color-primary-200: 0, 189, 145;
+  --color-primary-100: 17, 37, 212;
 
-  --color-neutral-400: hsl(0, 100%, 100%);
-  --color-neutral-300: hsl(224, 30%, 27%);
+  --color-neutral-400: 255, 255, 255;
+  --color-neutral-300: 215, 214, 255;
+  --color-neutral-200: 48, 59, 90;
+  --color-neutral-100: 50, 50, 50;
 
-  --color-gradient-400: hsl(252, 100%, 67%);
-  --color-gradient-300: hsl(241, 81%, 54%);
-  --color-gradient-200: hsla(256, 72%, 46%, 1);
-  --color-gradient-100: hsla(241, 72%, 46%, 0);
+  --color-gradient-400: 120, 87, 255;
+  --color-gradient-300: 46, 43, 233;
+  --color-gradient-200: 78, 33, 202;
+  --color-gradient-100: rgba(36, 33, 202, 0);
 }
 
 *,
@@ -31,16 +33,153 @@ body {
   justify-content: center;
 
   min-height: 100vh;
-  background-color: var(--color-neutral-400);
+  background-color: rgb(var(--color-neutral-400));
 }
 
 .wrapper {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2.074rem 1rem;
 }
 
 .summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.summary__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 2.074rem;
+  text-align: center;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--color-gradient-400)),
+    rgb(var(--color-gradient-300))
+  );
+}
+
+.summary__addition {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(var(--color-neutral-300));
+}
+
+.summary__result-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.579rem;
+  align-items: center;
+  justify-content: center;
+
+  height: 8.916rem;
+  width: 8.916rem;
+
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--color-gradient-200)),
+    var(--color-gradient-100)
+  );
+}
+
+.summary__points {
+  font-weight: 700;
+  font-size: 2.986rem;
+  color: rgb(var(--color-neutral-400));
+}
+
+.summary__of-points {
+  color: rgb(var(--color-neutral-300));
+}
+
+.summary__title {
+  color: rgb(var(--color-neutral-400));
+}
+
+.summary__description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: rgb(var(--color-neutral-300));
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.074rem;
+}
+
+.statistics__addition {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(var(--color-neutral-200));
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+  gap: 0.833rem;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.statistics__item--reaction {
+  color: rgb(var(--color-primary-400));
+  background-color: rgb(var(--color-primary-400), 0.2);
+}
+
+.statistics__item--memory {
+  color: rgb(var(--color-primary-300));
+  background-color: rgb(var(--color-primary-300), 0.2);
+}
+
+.statistics__item--verbal {
+  color: rgb(var(--color-primary-200));
+  background-color: rgb(var(--color-primary-200), 0.2);
+}
+
+.statistics__item--visual {
+  color: rgb(var(--color-primary-100));
+  background-color: rgb(var(--color-primary-100), 0.2);
+}
+
+.statistics__stats {
+  margin-left: auto;
+  color: rgb(var(--color-neutral-100));
+  font-weight: 700;
+}
+
+.statistics__stats strong {
+  color: rgb(var(--color-neutral-200));
+}
+
+.statistics__title {
+  font-weight: 500;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.btn--continue {
+  margin-top: auto;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 100rem;
+  background-color: rgb(var(--color-neutral-200));
+  color: rgb(var(--color-neutral-400));
+  font-weight: 700;
 }
 
 .visuallyhidden {
@@ -50,4 +189,14 @@ body {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+@media (max-width: 37.5rem) {
+  .wrapper {
+    max-width: 30rem;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+  }
 }
