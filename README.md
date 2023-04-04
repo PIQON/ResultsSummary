@@ -1,15 +1,15 @@
 <p id="readme-top"></p>
 <div align="center">
-  <h3 align="center">QR Code Component</h3>
+  <h3 align="center">Results Summary</h3>
 
   <p align="center">
-     QR Code Component based on frontend mentor design..
+     Results Summary based on frontend mentor design..
     <br />
     <br />
-    <a href="https://piqon.github.io/QRCode/">View a project demo</a>
+    <a href="https://results-summary-kwdw.vercel.app/">View a project demo</a>
   </p>
 
-![My Image](images/preview.jpg)
+![My Image](assets/images/desktop-preview.jpg)
 
 </div>
 
