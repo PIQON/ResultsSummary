@@ -11,8 +11,92 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <h1 class="visuallyhidden">Results Summary Of Test</h1>
+      <div class="wrapper">
+        <article class="summary">
+          <div class="summary__result">
+            <p class="addition">Your Result</p>
+            <div class="summary__result-points">
+              <p class="summary__points">
+                <span class="visuallyhidden">Your points of test</span>
+                <strong>76</strong>
+              </p>
+              <p class="summary__of-points">
+                <span class="visuallyhidden">Maxium points of test</span>
+                <span>of 100</span>
+              </p>
+            </div>
+            <h2 class="summary__title">Great</h2>
+            <p class="summary__description">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+          <div class="statistics">
+            <div class="statistics__item statistics__item--reaction">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                role="presentation"
+                aria-hidden="true"
+                alt=""
+                class="statistics__icon"
+              />
+              <p class="statistics__title">Reaction</p>
+              <p class="statistics__stats">
+                <strong>80</strong>
+                <span>/100</span>
+              </p>
+            </div>
+            <div class="statistics__item statistics__item--memory">
+              <img
+                src="./assets/images/icon-memory.svg"
+                role="presentation"
+                aria-hidden="true"
+                alt=""
+                class="statistics__icon"
+              />
+              <p class="statistics__title">Memory</p>
+              <p class="statistics__stats">
+                <strong>92</strong>
+                <span>/100</span>
+              </p>
+            </div>
+            <div class="statistics__item statistics__item--verbal">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                role="presentation"
+                aria-hidden="true"
+                alt=""
+                class="statistics__icon"
+              />
+              <p class="statistics__title">Verbal</p>
+              <p class="statistics__stats">
+                <strong>61</strong>
+                <span>/100</span>
+              </p>
+            </div>
+            <div class="statistics__item statistics__item--visual">
+              <img
+                src="./assets/images/icon-visual.svg"
+                role="presentation"
+                aria-hidden="true"
+                alt=""
+                class="statistics__icon"
+              />
+              <p class="statistics__title">Visual</p>
+              <p class="statistics__stats">
+                <strong>72</strong>
+                <span>/100</span>
+              </p>
+            </div>
+          </div>
+          <button class="btn btn--continue">Continue</button>
+        </article>
+      </div>
+    </main>
+  </body>
 </html>

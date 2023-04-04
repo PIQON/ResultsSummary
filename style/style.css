@@ -24,3 +24,30 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
 }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  background-color: var(--color-neutral-400);
+}
+
+.wrapper {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.summary {
+}
+
+.visuallyhidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
